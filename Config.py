@@ -23,7 +23,8 @@ default_config = {
         "Log_path":  r"E:\Descargas", 
         "Destiny_Path" : r"E:\Descargas\Anime",
         "max_files": 10,
-        "enable_logging": True
+        "enable_logging": True,
+        "File_Name": "Test1.txt"
 }
 
 # Usage

@@ -29,14 +29,14 @@ def userconf():
 
 
 def WriteFiles(Data):
-    fileRout = os.path.join(CG.config["Log_path"], "Mytestdata1.txt")
+    fileRout = os.path.join(CG.config["Log_path"],CG.config["File_Name"])
     if os.path.exists(fileRout):
-        with open(fileRout, "a+",encoding="utf-8") as f:
+        with open(fileRout, "a+",encoding="utf-8-sig") as f:
             f.seek(0)            
             f.write(Data)
             f.close
     else:
-        with open(fileRout, "a+",encoding="utf-8") as f:                     
+        with open(fileRout, "a+",encoding="utf-8-sig") as f:                     
             f.write(Data)
             f.close
         
@@ -54,7 +54,7 @@ def walking(directory):
                     WriteFiles(file_name + '\n')
                     walking(file_path)
                 else:
-                    print("- " + file_name)    
+                    print("-" + file_name)    
                     WriteFiles(file_name + '\n')    
 
 

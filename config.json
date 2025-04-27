@@ -3,5 +3,6 @@
     "Log_path": "E:\\Descargas",
     "Destiny_Path": "E:\\Descargas\\Anime",
     "max_files": 10,
-    "enable_logging": true
+    "enable_logging": true,
+    "File_Name": "Test1.txt"
 }
